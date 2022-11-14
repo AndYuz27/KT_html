@@ -13,6 +13,21 @@
             font-family: sans-serif;
 
         }
+        .ddd2{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .album{
+            position: relative;
+            width: 100%;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 50px;
+
+        }
         header{
             display: flex;
             flex-direction: row;
@@ -29,8 +44,8 @@
             background-image: url(https://r2.mt.ru/r5/photo81ED/20759431553-0/jpg/bp.jpeg);
         background-size: cover;
         background-position: center;
-        width: 500px;
-        height: 650px;
+        width: 750px;
+        height: 790px;
         }
         .lend_desc{
             width: 480px;
@@ -52,6 +67,70 @@
             border: none;
             font-size: 25px;
         }
+        .ffd{
+            display: flex;
+            flex-direction: row;
+        }
+        .alb_pic{
+            margin: 15px;
+        }
+        .popup{
+            padding: 50px;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        .alb_pic1{
+            background-image: url(https://i.pinimg.com/originals/64/f5/01/64f501db467c44445285591ab8ca8512.jpg);
+            background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 640px
+        }
+        .alb_pic2{
+            background-image: url(https://www.the-sun.com/wp-content/uploads/sites/6/2021/10/OFF-PLAT-JD-GIGACHAD.jpg?strip=all&quality=100&w=1200&h=800&crop=1);
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+        height: 640px
+        }
+        .alb_pic3{
+            background-image: url(https://i.ytimg.com/vi/_ZZD9AkPZJQ/maxresdefault.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 800px;
+        }
+        @media screen and (max-width : 440px) {
+            body{
+                overflow-x: hidden;
+
+            }
+        }
+        @media screen and (max-width : 1280px) {
+            body{
+                overflow-x: hidden;
+
+            }
+            .lend_pic{
+            background-image: url(https://r2.mt.ru/r5/photo81ED/20759431553-0/jpg/bp.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 620px;
+        height: 650px;
+        }
+        }
+        @media screen and (max-width : 1024px) {
+            body{
+                overflow-x: hidden;
+
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,6 +148,21 @@
                     <i>Image from Mazepov</i>
                     <br>
                     <button class="big_btn" onclick="">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="ddd2">
+            <div class="album">
+                <div class="ffd">
+            <div class="alb_pic1 alb_pic"></div>
+            <div class="alb_pic2 alb_pic"></div>
+                </div>
+            <div class="alb_pic3 alb_pic"></div>
+            </div>
+            <div class="popup">
+                <div class="info">
+                    <h3>Functional Traning</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos amet totam?</p>
                 </div>
             </div>
         </section>
