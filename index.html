@@ -249,6 +249,8 @@
         }
         .alb_pic{
             margin: 15px;
+            width: 50%;
+        height: 640px
         }
         .popup{
             padding: 50px;
@@ -265,15 +267,13 @@
             background-image: url(https://i.pinimg.com/originals/64/f5/01/64f501db467c44445285591ab8ca8512.jpg);
             background-size: cover;
         background-position: center;
-        width: 50%;
-        height: 640px
+
         }
         .alb_pic2{
             background-image: url(https://www.the-sun.com/wp-content/uploads/sites/6/2021/10/OFF-PLAT-JD-GIGACHAD.jpg?strip=all&quality=100&w=1200&h=800&crop=1);
             background-size: cover;
             background-position: center;
-            width: 50%;
-        height: 640px
+
         }
         .alb_pic3{
             background-image: url(https://i.ytimg.com/vi/_ZZD9AkPZJQ/maxresdefault.jpg);
@@ -282,6 +282,15 @@
             width: 100%;
             height: 800px;
         }
+        .llk_h2{
+            font-size: 48pt;
+            font-weight: bolder;
+        }
+        .llk_p{
+            font-size: 28pt;
+            font-weight:100;
+        }
+
         @media screen and (max-width : 1280px) {
             body{
                 overflow-x: hidden;
@@ -309,7 +318,9 @@
             background-color: #000;
             color: white;
         }
-        @media screen and (max-width : 440px) {
+        
+        /* mobile adaptive*/
+        @media screen and (max-width : 440px)  {
             body{
                 overflow-x: hidden;
 
@@ -338,6 +349,48 @@
             font-size: 0.78rem;
             font-weight: lighter;
             }
+            .album{
+            position: relative;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 50px;
+            }
+            .alb_pic{
+            margin: 15px;
+            width: 95%;
+            height: 380px
+            }
+            .alb_pic3{
+                display: none;
+            }
+            .ffd{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }
+            .popup{
+            padding: 25px;
+            width: 65%;
+            height: 300px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        .llk_h2{
+            font-size: 24pt;
+        }
+        .llk_p{
+            font-size: 22pt;
+        }
+        .llk{
+
+            width: 72%;
+
+        }
         }
 
     </style>
@@ -372,13 +425,15 @@
                 <div class="info">
                     <h3>Functional Traning</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos amet totam?</p>
+                    <button class="big_btn_black" onclick="">Learn More</button>
+
                 </div>
             </div>
         </section>
         <section class="ddd3" >
             <div class="llk">
-            <h2 style="font-size: 48pt;">Lorem ipsum dolor sit amet consectetur</h2>
-            <p style="font-size: 28pt;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam praesentium recusandae.</p>
+            <h2 class="llk_h2">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="llk_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam praesentium recusandae.</p>
             <button class="big_btn_black">Learn more</button>
             </div>
         </section>
