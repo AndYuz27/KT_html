@@ -282,21 +282,13 @@
             width: 100%;
             height: 800px;
         }
-        @media screen and (max-width : 440px) {
-            body{
-                overflow-x: hidden;
-
-            }
-        }
         @media screen and (max-width : 1280px) {
             body{
                 overflow-x: hidden;
 
             }
             .lend_pic{
-            background-image: url(https://r2.mt.ru/r5/photo81ED/20759431553-0/jpg/bp.jpeg);
-        background-size: cover;
-        background-position: center;
+
         width: 620px;
         height: 650px;
         }
@@ -317,6 +309,37 @@
             background-color: #000;
             color: white;
         }
+        @media screen and (max-width : 440px) {
+            body{
+                overflow-x: hidden;
+
+            }
+            .lending{
+            display: flex;
+            flex-direction: column-reverse  ;
+            background-color: rgb(73, 73, 73);
+            }
+            .lend_desc{
+            width: 320px;
+            margin-bottom: 7.5vh;
+            padding-left: 35px;
+            height: inherit;
+            color: white;
+            margin-top: 0;
+            }
+            .h2_title{
+            font-size: 2.2rem;
+            }
+            .lend_pic{
+            width: 100%;
+            height: 400px;
+            }
+            .p_title{
+            font-size: 0.78rem;
+            font-weight: lighter;
+            }
+        }
+
     </style>
 </head>
 <body>
